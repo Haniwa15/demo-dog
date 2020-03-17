@@ -7,3 +7,9 @@ Cat.prototype.eat = function(mouse){
 };
 
 module.exports  = Cat;
+
+
+Cat.prototype.sleep = function (mouse){
+        this.bed = mouse;
+        this.night = true;
+}
