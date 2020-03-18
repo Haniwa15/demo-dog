@@ -2,8 +2,11 @@ function Cat (name){
         this.stomatch = name;
 };
 
-Cat.prototype.eat = function(mouse){
-        this.stomatch.push(mouse);
+Cat.prototype.eat = function(animal){
+        this.stomatch.push(animal);
+        if (animal!='mouse'){
+                console.log('cat can fuck');
+        }
 };
 
 module.exports  = Cat;
